@@ -148,9 +148,9 @@ while true; do
   source "$HOME/.bashrc"
 
   # echo "=== tmate connection ==="
-  # echo "SSH: ${tmate_ssh}"
-  # echo "WEB: ${tmate_web}"
-  # echo "RUN (gh): ssh \"\$(gh api -H 'Accept: application/vnd.github.v3.raw' \"/repos/${GITHUB_REPOSITORY}/contents/host.conf?ref=filesystem\" | tr -d '\r\n')\""
+  echo "SSH: ${tmate_ssh}"
+  echo "WEB: ${tmate_web}"
+  echo "RUN (gh): ssh \"\$(gh api -H 'Accept: application/vnd.github.v3.raw' \"/repos/${GITHUB_REPOSITORY}/contents/host.conf?ref=filesystem\" | tr -d '\r\n')\""
   # echo "========================"
 
   # Update README with the live session link(s)
