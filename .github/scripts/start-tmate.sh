@@ -20,10 +20,10 @@ mkdir -p "$RUNNER_SCRIPTS_DIR"
 cp -r .github/scripts "$RUNNER_SCRIPTS_DIR/" 2>/dev/null || true
 
 # Optional per-repo initialization hook.
-if [ -f ".github/scripts/prestart.sh" ]; then
-  echo "Running prestart script"
-  bash .github/scripts/prestart.sh
-fi
+# if [ -f ".github/scripts/prestart.sh" ]; then
+#   echo "Running prestart script"
+#   bash .github/scripts/prestart.sh
+# fi
 
 # Make sure the remote filesystem branch exists locally (for fast checks).
 git fetch "$remote" "$filesystem_branch":refs/remotes/$remote/$filesystem_branch 2>/dev/null || true
